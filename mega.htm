@@ -1,0 +1,402 @@
+<!DOCTYPE html >
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home-MEGA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="mega.css" />
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <div class="headerright">
+            <li><img class="helloimg" src="assets/megaicon.svg" alt="" /></li>
+                <button class="hello sk" onclick="hlw();">Products <i class="fas fa-chevron-down"></i></button>                
+                    <div id = "cont1" class="chevroncontainer">
+                              <div class="chevbox1">
+                              <h5 class="product">Products</h5>              
+                            <div class="label1"><img src="assets/clouds.png" alt="">  Cloud storage
+                              <div class="desc">Keep your files in asecure place</div>         
+                            </div>               
+                            <div class="label2"><img src="assets/backup.png" alt="">Backup
+                              <div class="desc">Securely back up your files</div>         
+                            </div>               
+                            <div class="label3"><img src="assets/objectstorage.png" alt="">Object storage
+                              <div class="desc">Fully scalable S3 compatible storage</div>          
+                            </div>
+                            </div>
+                            <div class="chevbox2">                 
+                            <div class="label4"><img src="assets/chat.png" alt="">Chat and Meetings
+                              <div class="desc">Secure and private conversations</div>          
+                            </div>               
+                            <div class="label5"><img src="assets/share.png" alt="">Share
+                              <div class="desc">Share your files with friend</div>         
+                            </div>                
+                            <div class="label6"><img src="assets/vpn.png" alt="">VPN
+                              <div class="desc">Protect your privacy online</div>         
+                            </div>
+                            </div>
+                            <div class="chevbox3">                 
+                            <div class="label7"><img src="assets/sync.png" alt="">   Sync
+                              <div class="desc">Sync you file with mega</div>         
+                            </div>               
+                            <div class="label8"> <img src="assets/files.png" alt="">Media files
+                              <div class="desc">Store and organise your media files</div>
+                            </div>         
+                            </div>                                          
+                          </div>
+                <button class="hello" onclick="hlw1()">Solutions<i class="fas fa-chevron-down"></i>
+                </button>
+                            <div id = "cont2" class="chevroncontainer2">
+                            <div class="chevbox1">
+                            <h5 class="product">SOLUTIONS</h5>              
+                            <div class="label1"><img src="assets/individuals.png" alt="">Individuals
+                            <div class="desc">Personal account for everyday use</div>         
+                            </div>  
+                          </div>  
+                            <div class="chevbox2 nt">         
+                            <div class="label2"><img src="assets/freelancer.png" alt="">Freelancers
+                            <div class="desc"> Creatives, contractors, consultants <br> and side hustlers</div>         
+                            </div> 
+                            </div> 
+
+                            <div class="chevbox3 nt">
+                            <div class="label3"><img src="assets/small business.png" alt="">Small business
+                            <div class="desc"> Startups, sole traders, family <br>businesses and online retailers</div>          
+                            </div> 
+                          </div>
+                          
+                        </div>
+                            
+              <li class="hello">business</li>
+              <li class="hello">Pricing</li>
+              <button class="hello" onclick="hlw2()">Help<i class="fas fa-chevron-down"></i></button>
+                        <div id = "cont3" class="chevroncontainer3">
+                          <div class="chevbox1">
+                          <div class="label1"><img src="assets/help center.png" alt="">Help Centre</div>
+                           <div class="desc">Find extensive MEGA documentation</div>         
+                          </div>
+                          <div class="chevbox2 nt">               
+                          <div class="label2"><img src="assets/contact us.png" alt=""> Contact us
+                          <div class="desc"> Do not hesitate to contact us</div>         
+                          </div> 
+                        </div>       
+                          <div class="chevbox3 nt">       
+                          <div class="label3"><img src="assets/vpn.png" alt="">Bug Bounty
+                            
+                          <div class="desc"> Report any bugs or issues</div>          
+                          </div> 
+                        </div>
+                        </div>
+                      </div>
+        
+          <div class="btn">
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-globe"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"
+                />
+              </svg>
+              EN
+            </li>
+            <li class="left">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="currentColor"
+                class="bi bi-brightness-high"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"
+                />
+              </svg>
+            </li>
+            <li class="left"><button id="btn1">Log in</button></li>
+            <li class="left"><button id="btn2">Sign up</button></li>
+          </div>
+        </ul>
+      </nav>
+    </header>    
+    
+    <div class="megabody">
+          
+    <div class="container">
+      <h1><b>Online privacy for everyone</b></h1>
+      <p id="p1">
+        Privacy is not an option with MEGA, it’s standard. That’s because we
+        believe that everyone
+      </p>
+      <p class="should">
+        should be able to store data and communicate securely and privately
+        online.
+      </p>
+      <button id="btn3">Try MEGA for free</button>
+      <h1 id="h1">Store files, chat, and meet – all in one</h1>
+      <h1>place</h1>
+      <p class="bring">
+        MEGA brings cloud storage, file and folder sharing, chat, meetings, and
+        more — together into one place.
+      </p>
+    </div>
+    <div class="box">
+      <div class="box1">
+        <img
+          id="box1"
+          src="https://mega.io/wp-content/uploads/2023/01/Icon-3D-cloud.png"
+          alt=""
+        />
+        <h3 class="box1heading">cloud storage</h3>
+        <p class="box1paragraph">
+          Store data securely online. Get lots of storage space, easily extend
+          your storage, and upload big files and folders.
+        </p>
+      </div>
+      <br />
+      <div class="box2">
+        <img
+          id="box2"
+          src="https://mega.io/wp-content/uploads/2023/01/Icon-3D-chat.png"
+          alt=""
+        />
+        <h3 class="box2heading">chat</h3>
+        <p class="box2paragraph">
+          Send individual messages to MEGA contacts and have group chats with
+          anyone – even non-MEGA users.
+        </p>
+      </div>
+      <div class="box3">
+        <img
+          id="box3"
+          src="https://mega.io/wp-content/uploads/2023/01/Icon-3D-call.png"
+          alt=""
+        />
+        <h3 class="box3heading">call and meet</h3>
+        <p class="box3paragraph">
+          Make audio and video calls and have meetings with anyone. Guests can
+          join a meeting or a group chat without having to sign up to MEGA.
+        </p>
+      </div>
+    </div>
+    <div class="container2">
+      <h1 class="c2heading">Security that’s <br />always on</h1>
+      <pre>
+      <p class="information">We protect your data with zero-knowledge encryption, the <br>highest level of online security and privacy. This means that <br> only the sender and the recipient have the keys needed to see,<br> read, or listen to the data stored or shared on MEGA.
+
+ For anyone else, including MEGA, the data would appear as<br> gibberish, and they would find it impossible to read or<br> understand.</p></pre>
+      <h3 class="security">More about security &rarr;</h3>
+    </div>
+    <h1 class="choose">Why choose MEGA?</h1>
+    <div class="secondbox">
+      <h1 class="secondboxheading">
+        Never run out of <br />
+        storage space
+      </h1>
+      <p class="secondboxparagraph">
+        Need lots of storage space? No problem. We have a <br />range of
+        competitive plans that go up to 16 TB. If you <br />need even more
+        space, get a Pro Flexi or Business plan, <br />where you only pay for
+        the extra storage space you use.
+      </p>
+      <h3 class="our">See our plans &rarr;</h3>
+    </div>
+    <div class="thirdbox">
+      <h1 class="thirdboxheading">Share files <br />and folders with anyone</h1>
+      <p class="thirdboxparagraph">
+        Easily share your MEGA files and folders with friends <br />
+        and colleagues, even people without MEGA accounts.<br />
+        And when sharing, you’re still in control. You can give<br />
+        people read-only or full access to your folders, and can<br />
+        set a password or create expiring links.
+      </p>
+      <h3 class="about">More about sharing  &rarr;</h3>
+    </div>
+    <div class="fourth">
+      <h1 class="be">
+        Be in control of your <br />
+        data
+      </h1>
+      <p class="whether">
+        Whether it’s giving people limited or full access to files<br />
+        you share with them or preventing new group chat<br />
+        members from reading old messages, your data is in <br />your hands.
+        That’s our number one promise to you.
+      </p>
+      <h3 class="fourthbtn">Learn more &rarr;</h3>
+    </div>
+    <div class="fifth">
+      <h1 class="work">
+        Work seamlessly <br />
+        across all devices
+      </h1>
+      <p class="easily">
+        Easily access your cloud files through our desktop app,<br />
+        mobile apps or the web. And, if you sync or back up<br />
+        data from your computer to MEGA, all changes will <br />automatically be
+        replicated in real time, so you’ll be able<br />
+        to see the latest files, no matter where you are.
+      </p>
+    </div>
+    <h1 class="how">How does MEGA compare?</h1>
+    <div class="container3">
+      <div class="box4">
+        <img class="image" src="megaicon.svg" alt="" />
+        <h3 class="mega">Mega</h3>
+        <h1 class="euro">€1.56 *</h1>
+        <p class="tb">per TB per month</p>
+        <h5 class="e2e"> &#10003 End-to-end encryption</h5>
+        <p class="price">* Price based on Pro III annual payment</p>
+      </div>
+      <div class="box5">
+        <img
+          class="image"
+          src="https://mega.io/wp-content/themes/megapages/megalib/images/dropbox-icon.svg"
+          alt=""
+        />
+        <h3 class="mega">Dropbox</h3>
+        <h1 class="euro">€5.50 *</h1>
+        <p class="tb">per TB per month</p>
+        <h5 class="e2e">
+          <div class="icon x"></div>
+          &#10005;  End-to-end encryption
+        </h5>
+        <p class="price">* Price based on Pro III annual payment</p>
+      </div>
+      <div class="box6">
+        <img
+          class="image"
+          src="https://mega.io/wp-content/themes/megapages/megalib/images/googledrive-icon.svg"
+          alt=""
+        />
+        <h3 class="mega">Google Drive</h3>
+        <h1 class="euro">€3.70 *</h1>
+        <p class="tb">per TB per month</p>
+        <h5 class="e2e"> &#10005;   End-to-end encryption</h5>
+        <p class="price">* Price based on Pro III annual payment</p>
+      </div>
+    </div>
+    <div class="container4">
+      <div class="box7">
+        <h4 class="new">NEW</h4>
+        <h1 class="vpn">MEGA VPN – Protect <br />your privacy online</h1>
+        <p class="secure">
+          Secure your Android device with a fast, encrypted internet <br />
+          connection that keeps you safe online.
+        </p>
+        <p class="secure">
+          Available exclusively to MEGA Pro plan subscribers.
+        </p>
+        <button class="more">More about MEGA VPN</button>
+      </div>
+      <div class="box8">
+        <img class="uploads"
+          src="https://mega.io/wp-content/uploads/vpn-featured-promo_2840x2148.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="container5">
+      <div class="box9">
+        <h1 class="grow">Grow your business with MEGA</h1>
+      </div>
+      <div class="box10">
+        <p class="bring">
+          Bring your team together online with MEGA for Business. From
+          freelancers to startups and all the way to enterprises, MEGA is the
+          perfect online tool to help you grow your business and your team.
+          Store and protect important documents and transform how your teams
+          collaborate with MEGA.
+        </p>
+        <button class="learn">Learn more &rarr;</button>
+      </div>
+    </div>
+    <div class="container6">
+      <h1 class="millions">Millions of people <br />trust us</h1>
+      <p class="join">
+        Join the millions of individuals and businesses who trust MEGA to store
+        and protect their data in the cloud.
+      </p>
+      <button class="sign">Sign up for free &rarr;</button>
+    </div>
+    <div class="container7">
+      <div class="box11">
+        <img src="megaicon.svg" class="final" alt="" />
+        <h3 class="final">MEGA</h3>
+        <h5 class="ms">The Privacy Company</h5>
+        <p class="light">User-encrypted cloud services</p>
+        <p class="light">© MEGA 2024 All rights reserved</p>
+      </div>
+      <div class="box12">
+        <h5 class="meru">Products</h5>
+        <p class="light">Cloud storage</p>
+        <p class="light">Object storage</p>
+        <p class="light">VPN</p>
+        <p class="light">Sync</p>
+        <p class="light">Backup</p>
+        <p class="light">Share</p>
+        <p class="light">Media files</p>
+        <p class="light">Chat and meetings</p>
+        <p class="light">Business</p>
+        <h5 class="meru">Solutions</h5>
+        <p class="light">Individuals</p>
+        <p class="light">Freelancers</p>
+        <p class="light">Small business</p>
+      </div>
+      <div class="box13">
+        <h5 class="meru">Platforms</h5>
+        <p class="light">Mobile apps</p>
+        <p class="light">Desktop app</p>
+        <p class="light">Browser extensions</p>
+        <p class="light">MEGA CMD</p>
+        <p class="light">CMD for NAS</p>
+        <h5 class="meru">Plans</h5>
+        <p class="light">Pricing</p>
+        <p class="light">Achievements</p>
+        <p class="light">Referral programme</p>
+      </div>
+      <div class="box14">
+        <h5 class="meru">Resources</h5>
+        <p class="light">Blog</p>
+        <p class="light">Security and privacy</p>
+        <p class="light">Reliability</p>
+        <p class="light">Developers</p>
+        <p class="light">Resellers</p>
+        <h5 class="meru">Help</h5>
+        <p class="light">Help Centre</p>
+        <p class="light">Contact us</p>
+        <p class="light">Vulnerability reward programme</p>
+        <p class="light">Support</p>
+      </div>
+      <div class="box15">
+        <h5 class="meru">Company</h5>
+        <p class="light">Careers</p>
+        <p class="light">About us</p>
+        <p class="light">Media</p>
+        <h5 class="meru">Legal</h5>
+        <p class="light">Terms of Service</p>
+        <p class="light">Additional VPN Terms of Service</p>
+        <p class="light">Privacy Policy</p>
+        <p class="light">Copyright</p>
+        <p class="light">Takedown Guidance Policy</p>
+        <p class="light">Transparency Report</p>
+        <p class="light">Cookie Policy</p>
+        <p class="light">Cookie Settings</p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  
+  </body>
+</html>
